@@ -21,7 +21,6 @@ public class TransacaoController {
 
     @GetMapping("/cartoes/{id}")
     public ResponseEntity<?> get(@PathVariable String cartaoId){
-
         List<Transacao> transacoes = transacaoRepository.findLast10ByCartao(cartaoId);
 
         if(transacoes.isEmpty())
