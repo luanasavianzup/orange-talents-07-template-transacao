@@ -26,4 +26,16 @@ public class Cartao {
         this.cartaoId = cartaoId;
         this.email = email;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getCartaoId() {
+        return cartaoId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
